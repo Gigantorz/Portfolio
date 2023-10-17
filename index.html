@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name ="viewport" content = "width = device -width, initial-scale = 1">
+        <!-- These are like importing packages -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <!-- The first 2 allows us to write React code in our JavaScripts -->
+        
+        <!-- Babel, allows us to write JSX syntax and ES6 in older browsers. -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div = id "mydiv"></div>
+
+        <script type = "text/babel">
+            function Hello() {
+                return <h1>Hello World!</h1>
+            }
+
+            const container = document.getElementById('mydiv')
+            const root = ReactDOM.createRoot(container);
+            root.render(<Hello />) // I guess this is how you render functions 
+        </script>
+    </body>
+</html>
+
+<!-- To use React, you need npm which is included with Node.js. So you need npm and Node.js installed -->
+<!-- To check if you have node.js, open up a terminal and type node --version. If you have something printed then you have node already. -->
+<!-- If you don't have it, you have to download and install it.-->
+
+<!-- Run this command to create a React application named my-react-app:
+npx create-react-app my-react-app
+
+The create-react-app will set up everything you need to run a React application. -->
+
+<!-- Run the React Application
+
+Now you are ready to run your first real React application!
+
+Run this command to move to the my-react-app directory:
+cd my-react-app
+
+Run this command to run the React application my-react-app:
+npm start
+
+A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar. -->
+
+<!-- Link to sources: https://www.w3schools.com/react/react_getstarted.asp -->
